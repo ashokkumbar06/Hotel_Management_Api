@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d11df8ff-8b28-4ff0-9623-6507c03fd693" name="Changes" comment="DB config" />
+    <list default="true" id="d11df8ff-8b28-4ff0-9623-6507c03fd693" name="Changes" comment="DB config">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
