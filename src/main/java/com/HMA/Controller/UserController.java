@@ -1,6 +1,5 @@
 package com.HMA.Controller;
 
-import com.HMA.Entity.Room;
 import com.HMA.Entity.User;
 import com.HMA.Service.UserService;
 import io.swagger.v3.oas.annotations.tags.Tag;

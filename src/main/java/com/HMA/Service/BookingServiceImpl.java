@@ -2,10 +2,12 @@ package com.HMA.Service;
 
 import com.HMA.Entity.Booking;
 import com.HMA.Repository.BookingRepository;
+import com.HMA.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BookingServiceImpl implements BookingService {
@@ -13,7 +15,14 @@ public class BookingServiceImpl implements BookingService {
     @Autowired
     private BookingRepository bookingRepository;
 
+    @Autowired
+    UserRepository userRepository;
+
     public Booking createBooking(Booking booking) {
+        Optional<String> email = userRepository.findByEmail(booking.getUser().getEmail());
+        if (email.isEmpty() || email.equals(null)) {
+            new NullPointerException("User not found. please create new user for booking rooms");
+        }
         return bookingRepository.save(booking);
     }
 
@@ -28,8 +37,6 @@ public class BookingServiceImpl implements BookingService {
 
     public Booking updateBooking(String id, Booking booking) {
         Booking existing = getBookingById(id);
-        existing.setRoom(booking.getRoom());
-        existing.setUser(booking.getUser());
         existing.setCheckIn(booking.getCheckIn());
         existing.setCheckOut(booking.getCheckOut());
         existing.setTotalPrice(booking.getTotalPrice());

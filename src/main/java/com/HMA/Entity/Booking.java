@@ -12,14 +12,9 @@ public class Booking {
 
     @Id
     private String id;
-
-    private Room room;
-
     private User user;
-
     private LocalDate checkIn;
     private LocalDate checkOut;
     private double totalPrice;
-
-    private String status = "CONFIRMED"; // CANCELLED, COMPLETED
+    private String status; // CANCELLED, COMPLETED
 }

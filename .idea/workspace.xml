@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d11df8ff-8b28-4ff0-9623-6507c03fd693" name="Changes" comment="DB config">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="d11df8ff-8b28-4ff0-9623-6507c03fd693" name="Changes" comment="Basic Serivce config">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Service/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Service/BookingServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,12 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1763003292868</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Basic Serivce config">
+      <option name="closed" value="true" />
+      <created>1763143486601</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763143486601</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setUp" />
     <MESSAGE value="DB config" />
-    <option name="LAST_COMMIT_MESSAGE" value="DB config" />
+    <MESSAGE value="Basic Serivce config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic Serivce config" />
   </component>
 </project>
