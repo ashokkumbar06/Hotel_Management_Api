@@ -13,7 +13,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
-.idea/workspace.xml
+.idea/workspace.xml/
 ### IntelliJ IDEA ###
 .idea/
 
