@@ -1,5 +1,6 @@
 package com.HMA.Controller;
 
+import com.HMA.DTO.BookingDTO;
 import com.HMA.Entity.Booking;
 import com.HMA.Service.BookingService;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,8 +20,8 @@ public class BookingController {
     private BookingService bookingService;
 
     @PostMapping
-    public ResponseEntity<?> createBooking(@RequestBody Booking booking) {
-        Booking data = bookingService.createBooking(booking);
+    public ResponseEntity<?> createBooking(@RequestBody BookingDTO booking) {
+        BookingDTO data = bookingService.createBooking(booking);
         return new ResponseEntity<>(data, HttpStatus.CREATED);
     }
 

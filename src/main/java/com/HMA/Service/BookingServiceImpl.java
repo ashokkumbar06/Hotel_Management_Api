@@ -1,6 +1,8 @@
 package com.HMA.Service;
 
+import com.HMA.DTO.BookingDTO;
 import com.HMA.Entity.Booking;
+import com.HMA.Mapper.BookingMapper;
 import com.HMA.Repository.BookingRepository;
 import com.HMA.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,12 +20,19 @@ public class BookingServiceImpl implements BookingService {
     @Autowired
     UserRepository userRepository;
 
-    public Booking createBooking(Booking booking) {
-        Optional<String> email = userRepository.findByEmail(booking.getUser().getEmail());
+    @Autowired
+    private BookingMapper bookingMapper;
+
+    @Override
+    public BookingDTO createBooking(BookingDTO dto) {
+        Optional<String> email = userRepository.findByEmail(dto.getUser().getEmail());
         if (email.isEmpty() || email.equals(null)) {
             new NullPointerException("User not found. please create new user for booking rooms");
         }
-        return bookingRepository.save(booking);
+        Booking booking = bookingMapper.toEntity(dto);
+        bookingRepository.save(booking);
+        BookingDTO postData = bookingMapper.toDTO(booking);
+        return postData;
     }
 
     public List<Booking> getAllBookings() {

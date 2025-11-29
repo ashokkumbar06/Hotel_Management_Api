@@ -1,5 +1,6 @@
 package com.HMA.Controller;
 
+import com.HMA.DTO.RoomDto;
 import com.HMA.Entity.Room;
 import com.HMA.Service.RoomService;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,8 +20,8 @@ public class RoomController {
     RoomService roomService;
 
     @PostMapping
-    public ResponseEntity<Room> saveRoom(@RequestBody Room room) {
-        Room data = roomService.saveRoom(room);
+    public ResponseEntity<RoomDto> saveRoom(@RequestBody RoomDto roomDto) {
+        RoomDto data = roomService.saveRoom(roomDto);
         return new ResponseEntity<>(data, HttpStatus.CREATED);
     }
 

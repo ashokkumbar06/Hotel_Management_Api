@@ -1,6 +1,8 @@
 package com.HMA.Service;
 
+import com.HMA.DTO.RoomDto;
 import com.HMA.Entity.Room;
+import com.HMA.Mapper.RoomMapper;
 import com.HMA.Repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,9 +15,15 @@ public class RoomServiceImpl implements RoomService {
     @Autowired
     RoomRepository roomRepository;
 
+    @Autowired
+    RoomMapper roomMapper;
+
     @Override
-    public Room saveRoom(Room room) {
-        return roomRepository.save(room);
+    public RoomDto saveRoom(RoomDto roomDto) {
+        Room room = roomMapper.toEntity(roomDto);
+        Room post = roomRepository.save(room);
+        RoomDto dto = roomMapper.toDTO(post);
+        return dto;
     }
 
     @Override

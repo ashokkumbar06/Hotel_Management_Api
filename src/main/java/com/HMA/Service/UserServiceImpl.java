@@ -1,6 +1,8 @@
 package com.HMA.Service;
 
+import com.HMA.DTO.UserDto;
 import com.HMA.Entity.User;
+import com.HMA.Mapper.UserMapping;
 import com.HMA.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,8 +15,15 @@ public class UserServiceImpl implements UserService {
     @Autowired
     UserRepository userRepository;
 
-    public User createUser(User user) {
-        return userRepository.save(user);
+    @Autowired
+    UserMapping userMapping;
+
+    @Override
+    public UserDto createUser(UserDto user) {
+        User data = userMapping.toEntity(user);
+        User post = userRepository.save(data);
+        UserDto dto = userMapping.toDTO(post);
+        return dto;
     }
 
     public List<User> getAllUsers() {

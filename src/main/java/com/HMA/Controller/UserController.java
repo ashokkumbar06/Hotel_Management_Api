@@ -1,5 +1,6 @@
 package com.HMA.Controller;
 
+import com.HMA.DTO.UserDto;
 import com.HMA.Entity.User;
 import com.HMA.Service.UserService;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,8 +20,8 @@ public class UserController {
     UserService userService;
 
     @PostMapping
-    public ResponseEntity<User> createUser(@RequestBody User user) {
-        User data = userService.createUser(user);
+    public ResponseEntity<UserDto> createUser(@RequestBody UserDto user) {
+        UserDto data = userService.createUser(user);
         return new ResponseEntity<>(data, HttpStatus.CREATED);
     }
 
