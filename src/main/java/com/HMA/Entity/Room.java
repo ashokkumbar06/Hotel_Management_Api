@@ -10,7 +10,7 @@ public class Room {
     @Id
     private String id;
     private String roomNumber;
-    private String type;
+    private String roomType;
     private int capacity;
     private double pricePerDay;
 }

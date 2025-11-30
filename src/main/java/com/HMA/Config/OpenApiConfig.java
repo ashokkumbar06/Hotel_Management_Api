@@ -11,8 +11,9 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
-                .info(new Info().title("Hotel Reservation API")
+                .info(
+                        new Info().title("Hotel Reservation API")
                         .description("API to manage hotel reservations")
-                        .version("v1"));
+                        .version("v2"));
     }
 }

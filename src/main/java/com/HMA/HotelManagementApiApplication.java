@@ -14,5 +14,4 @@ public class HotelManagementApiApplication {
         System.out.println(" A     A    S     S     H       H     O    O     K    K    ");
         System.out.println("A       A   SSSSSSS     H       H     00OOOO     K      K  ");
 	}
-
 }

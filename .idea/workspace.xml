@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d11df8ff-8b28-4ff0-9623-6507c03fd693" name="Changes" comment="Basic Serivce config">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Config/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Config/OpenApiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/BookingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/BookingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/RoomDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/RoomDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/UserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Entity/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/HotelManagementApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/HotelManagementApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Mapper/BookingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Mapper/BookingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Mapper/RoomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Mapper/RoomMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Service/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Service/BookingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Service/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Service/RoomServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +70,7 @@
     &quot;Maven.Hotel_Management_Api [compile].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Dev&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -73,6 +82,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.HMA.Enum" />
       <recent name="com.HMA.Entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">

@@ -30,12 +30,10 @@ public class RoomServiceImpl implements RoomService {
     public Room updateRoom(Integer id, Room room) {
         Room existing = roomRepository.findById(String.valueOf(id))
                 .orElseThrow(() -> new RuntimeException("Room not found"));
-
         existing.setRoomNumber(room.getRoomNumber());
-        existing.setType(room.getType());
+        existing.setRoomType(room.getRoomType());
         existing.setCapacity(room.getCapacity());
         existing.setPricePerDay(room.getPricePerDay());
-
         return roomRepository.save(existing);
     }
 

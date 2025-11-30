@@ -9,10 +9,10 @@ import java.time.LocalDate;
 @Data
 @Document(collection = "Booking_data")
 public class Booking {
-
     @Id
     private String id;
     private User user;
+    private int roomNo;
     private LocalDate checkIn;
     private LocalDate checkOut;
     private double totalPrice;

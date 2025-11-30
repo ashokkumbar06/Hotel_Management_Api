@@ -27,7 +27,10 @@ public class BookingServiceImpl implements BookingService {
     public BookingDTO createBooking(BookingDTO dto) {
         Optional<String> email = userRepository.findByEmail(dto.getUser().getEmail());
         if (email.isEmpty() || email.equals(null)) {
-            new NullPointerException("User not found. please create new user for booking rooms");
+            new NullPointerException("User not found. please create new user profile for booking rooms");
+        }
+        if (dto.getCheckOut().isBefore(dto.getCheckIn())) {
+            new IllegalArgumentException("Check-out date must be after check-in date");
         }
         Booking booking = bookingMapper.toEntity(dto);
         bookingRepository.save(booking);

@@ -16,7 +16,7 @@ public class RoomMapper {
         RoomDto dto = modelMapper.map(room, RoomDto.class);
         dto.setId(room.getId());
         dto.setRoomNumber(room.getRoomNumber());
-        dto.setType(room.getType());
+        dto.setRoomType(room.getRoomType());
         dto.setCapacity(room.getCapacity());
         dto.setPricePerDay(room.getPricePerDay());
         return dto;
