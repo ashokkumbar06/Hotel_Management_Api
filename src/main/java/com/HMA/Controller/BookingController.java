@@ -36,7 +36,7 @@ public class BookingController {
     }
 
     @PutMapping("/{id}")
-    public Booking updateBooking(@PathVariable String id, @RequestBody Booking booking) {
+    public BookingDTO updateBooking(@PathVariable String id, @RequestBody BookingDTO booking) {
         return bookingService.updateBooking(id, booking);
     }
 

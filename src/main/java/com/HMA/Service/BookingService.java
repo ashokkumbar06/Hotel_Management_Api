@@ -13,7 +13,7 @@ public interface BookingService {
 
     Booking getBookingById(String id);
 
-    Booking updateBooking(String id, Booking booking);
+    BookingDTO updateBooking(String id, BookingDTO booking);
 
     void deleteBooking(String id);
 }
