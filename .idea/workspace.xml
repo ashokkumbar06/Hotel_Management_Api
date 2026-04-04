@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d11df8ff-8b28-4ff0-9623-6507c03fd693" name="Changes" comment="Basic Serivce config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/BookingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/BookingDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/RoomDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/RoomDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/DTO/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Service/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/HMA/Service/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/HMA/Service/BookingServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +14,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Git repo/Hotel_Management_Api" value="35JxtJRY9DayIwPSqI2RSPNlHVS" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Ask" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Git repo\Hotel_Management_Api\htmlReport" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -59,6 +70,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HotelManagementApiApplication.executor": "Run",
+    "JUnit.All in Hotel_Management_Api.executor": "Coverage",
+    "JUnit.BookingControllerTest.executor": "Run",
+    "JUnit.BookingServiceImplTest.executor": "Run",
+    "JUnit.BookingServiceImplTest.shouldNotThrowExceptionWhenUserEmailExists.executor": "Debug",
+    "JUnit.HotelManagementApiApplicationTest.executor": "Run",
+    "JUnit.UserControllerTest.executor": "Run",
+    "JUnit.com.HMA in Hotel_Management_Api.executor": "Coverage",
     "Maven.Hotel_Management_Api [clean].executor": "Run",
     "Maven.Hotel_Management_Api [compile].executor": "Run",
     "Maven.Hotel_Management_Api [install].executor": "Run",
@@ -66,26 +84,61 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "Dev",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Git repo/Hotel_Management_Api",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.chat.ChatConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.HMA.Exception" />
       <recent name="com.HMA.Enum" />
       <recent name="com.HMA.Entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Git repo\Hotel_Management_Api" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.HMA" />
+      <recent name="com.HMA.Mapper" />
+      <recent name="com.HMA.Service" />
+      <recent name="com.HMA.Controller" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="HotelManagementApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.HMA.HotelManagementApiApplication" />
+  <component name="RunManager" selected="JUnit.com.HMA in Hotel_Management_Api">
+    <configuration name="All in Hotel_Management_Api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hotel_Management_Api" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hotel_Management_Api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.HMA.Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.HMA.Service" />
+      <option name="MAIN_CLASS_NAME" value="com.HMA.Service.BookingServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotelManagementApiApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hotel_Management_Api" />
       <extension name="coverage">
         <pattern>
@@ -93,14 +146,49 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.HMA" />
+      <option name="MAIN_CLASS_NAME" value="com.HMA.HotelManagementApiApplicationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hotel_Management_Api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.HMA.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.HMA.Controller" />
+      <option name="MAIN_CLASS_NAME" value="com.HMA.Controller.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.HMA in Hotel_Management_Api" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hotel_Management_Api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.HMA.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.HMA" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HotelManagementApiApplication" />
-        <item itemvalue="Application.HotelManagementApiApplication" />
+        <item itemvalue="JUnit.com.HMA in Hotel_Management_Api" />
+        <item itemvalue="JUnit.BookingServiceImplTest" />
+        <item itemvalue="JUnit.HotelManagementApiApplicationTest" />
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.All in Hotel_Management_Api" />
       </list>
     </recent_temporary>
   </component>
@@ -152,13 +240,58 @@
       <option name="project" value="LOCAL" />
       <updated>1764481010869</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Basic Serivce config">
+      <option name="closed" value="true" />
+      <created>1764485924465</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764485924465</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setUp" />
     <MESSAGE value="DB config" />
     <MESSAGE value="Basic Serivce config" />
     <option name="LAST_COMMIT_MESSAGE" value="Basic Serivce config" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Hotel_Management_Api$com_HMA_in_Hotel_Management_Api.ic" NAME="com.HMA in Hotel_Management_Api Coverage Results" MODIFIED="1775288416787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.HMA.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Hotel_Management_Api$All_in_Hotel_Management_Api.ic" NAME="All in Hotel_Management_Api Coverage Results" MODIFIED="1775285542666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

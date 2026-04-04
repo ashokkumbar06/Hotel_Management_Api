@@ -2,6 +2,7 @@ package com.HMA.Service;
 
 import com.HMA.DTO.BookingDTO;
 import com.HMA.Entity.Booking;
+import com.HMA.Exception.ResourceNotFoundException;
 import com.HMA.Mapper.BookingMapper;
 import com.HMA.Repository.BookingRepository;
 import com.HMA.Repository.UserRepository;
@@ -32,6 +33,10 @@ public class BookingServiceImpl implements BookingService {
         if (dto.getCheckOut().isBefore(dto.getCheckIn())) {
             new IllegalArgumentException("Check-out date must be after check-in date");
         }
+        if (dto.getRoomNo() == 0) {
+            throw new ResourceNotFoundException("Booking not found with id: " + dto.getRoomNo());
+        }
+
         Booking booking = bookingMapper.toEntity(dto);
         bookingRepository.save(booking);
         BookingDTO postData = bookingMapper.toDTO(booking);
